@@ -46,7 +46,7 @@ Lets see what did you ate over the week
 					<br />
 					<asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2">
 						<series>
-							<asp:Series Name="Series1" XValueMember="amount" YValueMembers="id">
+							<asp:Series Name="Series1" XValueMember="id" YValueMembers="amount">
 							</asp:Series>
 						</series>
 						<chartareas>
