@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="About Us" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
     CodeFile="app.aspx.cs" Inherits="About" %>
 
+<%@ Register assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="System.Web.UI.DataVisualization.Charting" tagprefix="asp" %>
+
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
@@ -40,5 +42,21 @@ What did you consume most this day?
 
 
 Lets see what did you ate over the week
+					<br />
+					<br />
+					<asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2">
+						<series>
+							<asp:Series Name="Series1" XValueMember="amount" YValueMembers="id">
+							</asp:Series>
+						</series>
+						<chartareas>
+							<asp:ChartArea Name="ChartArea1">
+							</asp:ChartArea>
+						</chartareas>
+					</asp:Chart>
+					<asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+						ConnectionString="<%$ ConnectionStrings:baovinhp_wor3ConnectionString %>" 
+						ProviderName="<%$ ConnectionStrings:baovinhp_wor3ConnectionString.ProviderName %>" 
+						SelectCommand="SELECT * FROM eating"></asp:SqlDataSource>
 </div>
 </asp:Content>
