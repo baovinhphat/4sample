@@ -6,9 +6,7 @@
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
         Application
-    </h2>s
-
-<div id="bag" runat="server" align="center">
+    </h2>&nbsp;<div id="bag" runat="server" align="center">
 
 What did you consume most this day?
 
