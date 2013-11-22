@@ -6,7 +6,7 @@
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
+				<h2>
         Application
     </h2>&nbsp;<div id="bag" runat="server" align="center">
 
