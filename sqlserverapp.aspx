@@ -41,7 +41,7 @@ What did you consume most this day?
 
 
 
-Lets see what did you ate over the week
+Lets see what did you ate over the week from sql server database
 					<br />
 					<br />
 					<asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2">
