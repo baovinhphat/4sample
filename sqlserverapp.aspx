@@ -44,7 +44,8 @@ What did you consume most this day?
 Lets see what did you ate over the week from sql server database
 					<br />
 					<br />
-					<asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2">
+					<asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2" 
+						ImageLocation="~/ChartPic_#SEQ(300,3)">
 						<series>
 							<asp:Series Name="Series1" XValueMember="color" YValueMembers="amount">
 							</asp:Series>
