@@ -45,10 +45,10 @@ Lets see what did you ate over the week from sql server database
 					<br />
 					<br />
 					<asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2" 
-						ImageLocation="~/TempImages/ChartPic_#SEQ(300,3)" 
-						ImageStorageMode="UseImageLocation">
+						ImageLocation="">
 						<series>
-							<asp:Series Name="Series1" XValueMember="color" YValueMembers="amount">
+							<asp:Series Name="Series1" XValueMember="color" YValueMembers="amount" 
+								ChartArea="ChartArea1">
 							</asp:Series>
 						</series>
 						<chartareas>
