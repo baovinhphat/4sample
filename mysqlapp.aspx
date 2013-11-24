@@ -6,7 +6,7 @@
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
+				<h2>
         Application
     </h2>&nbsp;<div id="bag" runat="server" align="center">
 
@@ -45,7 +45,8 @@ Lets see what did you ate over the week from mysql database
 					<br />
 					<br />
 					<asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2" 
-						ImageLocation="~/TempImages/ChartPic_#SEQ(300,3)">
+		ImageLocation="~/TempImages/ChartPic_#SEQ(300,3)" 
+						ImageStorageMode="UseImageLocation">
 						<series>
 							<asp:Series Name="Series1" XValueMember="id" YValueMembers="amount">
 							</asp:Series>
