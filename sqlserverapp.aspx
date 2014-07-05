@@ -41,7 +41,9 @@ What did you consume most this day?
 
 
 
-Lets see what did you ate over the week from sql server database
+Lets see what did you ate over the week from sql server database<br />
+					this grap utility wont work on app harbor because i save image to appharbor 
+					server instead of database
 					<br />
 					<br />
 					<asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2" 

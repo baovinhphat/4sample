@@ -37,6 +37,7 @@
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
                         <asp:MenuItem NavigateUrl="~/sqlserverapp.aspx" Text="Sql Server app"/>
                         <asp:MenuItem NavigateUrl="~/mysqlapp.aspx" Text="My Sql app"/>
+                        <asp:MenuItem NavigateUrl="~/comments.aspx" Text="Comment"/>
                     </Items>
                 </asp:Menu>
             </div>
